@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const { MONGO_URL } = require('./index');
 
 mongoose.set("strictQuery", false);
-mongoose.connect(MONGO_URL).then(() => {
+mongoose.connect('mongodb+srv://social_media:yDWn6wCnWJI73J9p@cluster0.0ypsb62.mongodb.net/?retryWrites=true&w=majority').then(() => {
     console.log('DB connected');
 }).catch((err) => {
     console.log(err);
-})
+});
