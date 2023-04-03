@@ -1,8 +1,6 @@
-const {DB_URL} = require('./db.config');
-const {PORT} = require('./server.config');
-
+require('dotenv').config();
 
 module.exports = {
-    DB_URL,
-    PORT
+    PORT: process.env.PORT,
+    MONGO_URL: process.env.MONGO_URL,
 }
