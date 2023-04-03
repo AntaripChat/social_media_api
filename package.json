@@ -1,0 +1,16 @@
+{
+  "name": "social_media",
+  "version": "1.0.0",
+  "description": "its a project",
+  "main": "server.js",
+  "author": "Antarip Chatterjee",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  }
+}
