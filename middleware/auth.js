@@ -1,6 +1,6 @@
 const User = require('../model/user.model');
 
-const verifySignup = async (req,res,next) =>{
+const verify = async (req,res,next) =>{
     if(!req.body.name){
         return res.status(400).send({message:"enter name"});
     };
@@ -19,5 +19,5 @@ const verifySignup = async (req,res,next) =>{
 };
 
 module.exports = {
-    verifySignup,
+    verify,
 }
